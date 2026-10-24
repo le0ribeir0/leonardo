@@ -15010,12 +15010,12 @@
                                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                                     <div class="text-sm text-gray-600 dark:text-gray-500">
                                         Powered by: Leonardo Augusto Coelho Ribeiro, 2026
-                                    </div>
-                                    
+                                    </div>                                    
+                                    <div class="flex items-center justify-between sm:justify-normal">
+                                        <div></div>                                    
                                     <div class="text-sm text-gray-600 dark:text-gray-500"> 
                                         Last update: <span id="last-update"></span>
                                     </div>
-
                                     <script>
                                         // Formats the timestamp to a text string like "October 23, 2026"
                                         const lastMod = new Date(document.lastModified);
@@ -15023,11 +15023,15 @@
                                         
                                         // 'en-US' forces the Month Day, Year layout
                                         document.getElementById("last-update").textContent = lastMod.toLocaleDateString('en-US', options);
-                                    </script>
-                                    
+                                    </script>                                    
+                                    </div>
                                     <div class="flex items-center justify-between sm:justify-normal">
                                         <div></div>
-                                    </div>
+                                        <button type="button" class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 p-1.5 text-gray-900 dark:text-white hover:bg-white dark:hover:bg-gray-900 focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center"><!----><span class="sr-only">Toggle color mode: system</span>
+                                            <span class="i-ph-desktop-duotone flex-shrink-0 h-5 w-5" aria-hidden="true">
+
+                                            </span>
+                                        </button>                                        
                                 </div>
                             </div>
                         </div>
